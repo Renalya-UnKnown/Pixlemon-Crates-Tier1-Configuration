@@ -1,0 +1,5413 @@
+Animation: AirStrike
+Proximity_Distance: 8
+AnimationVisibilityOption: Proximity
+Material: ENDER_CHEST
+OnlyPlaceable: true
+RewardsDontRepeat: false
+Enchanted: false
+Name: §a§l*§2§l*§a§l* §a§lShiny Pokemon Crate §a§l*§2§l*§a§l*
+RewardHologram:
+- '&a&l*&2&l*&a&l* &a&l{player_name}''''s §a§lShiny Pokemon Crate &a&l*&2&l*&a&l*'
+- ''
+- '&7Recieve A Random &a&lShiny Pokemon &7When Opened.'
+Size: 7
+Lores:
+- ''
+KeyCrate:
+  Require: true
+  Material: TRIPWIRE_HOOK
+  MatchName: true
+  MatchLore: true
+  MatchEnchants: false
+  MatchNBT: false
+  Name: §a§lShiny Pokemon Crate Key
+  Enchanted: true
+  Lores:
+  - ''
+  - §7Opens a Shiny Pokemon Crate
+  - §7Open crates at /warp crate
+  Glow: true
+  Amount: 1
+  ItemFlags:
+  - HIDE_ENCHANTS
+  Damage: 0
+ClosedCrateText:
+- '&7&l&d&lShiny Pokemon Crate'
+- '&7(&dRight-click &fto open crate&7)'
+- '&7(&dLeft-click &fto preview rewards&7)'
+ParticleAnimations:
+  '0':
+    type: ENCHANTMENT_TABLE
+    range-x: 1.0
+    range-y: 1.0
+    range-z: 1.0
+    center-x: 0.0
+    center-y: 0.0
+    center-z: 0.0
+    speed: 20.0
+    amount: 16
+    animation: CIRCLE
+  '3':
+    type: FLAME
+    range-x: 1.0
+    range-y: -1.0
+    range-z: 0.0
+    speed: 0.0
+    amount: 1
+    animation: TILTED_RINGS
+    center-x: 0
+    center-y: 0
+    center-z: 0
+Prizes:
+# Replace 'IDENTIFIER' with a unique tag to seperate them.
+# THESE CAN NEVER MATCH!!!
+## I recomend using this format for the identifier 
+## -> ['1shinyName' '2shinyName' '3shinyName'] 
+## where u replace Name with the pokemon.
+### Make sure the pokemon's name is capitalized but the word 
+### 'shiny' isnt
+
+# Replace NAMEOFPOKEMON with the word Shiny followed by what 
+# pokemon it is.
+## Basically if i wanted to give someone a pikachu it would 
+## look like this -> ['&a&lShiny Pikachu']
+### Make sure you add &a&l if it does not already have it. 
+### &a&l is whats called a text formater. It changes the way the
+### words look in game.
+
+  '1shinyBulbasaur': 
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Bulbasaur'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Bulbasaur (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Bulbasaur as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    ## DO NOT ADD SHINY HERE MUST BE LOWERCASE
+    Commands:
+    - pokegive {player_name} bulbasaur shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '2shinyCharmander':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Charmander'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Charmander (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Charmander as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} charmander shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '3shinySquirtle':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Squirtle'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Squirtle (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Squirtle as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} squirtle shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '4shinyCaterpie':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Caterpie'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Caterpie (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Caterpie as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} caterpie shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '5shinyWeedle':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Weedle'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Weedle (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Weedle as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} weedle shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '6shinyPidgey':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Pidgey'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Pidgey (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Pidgey as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} pidgey shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '7shinyRattata':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Rattata'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Rattata (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Rattata as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} rattata shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '8shinySpearow':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Spearow'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Spearow (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Spearow as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} spearow shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '9shinyEkans':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Ekans'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Ekans (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Ekans as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} ekans shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '10shinyPikachu':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Pikachu'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Pikachu (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Pikachu as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} pikachu shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '11shinySandshrew':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Sandshrew'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Sandshrew (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Sandshrew as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} sandshrew shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '12shinyFemaleNidoran':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Nidoran'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Nidoran (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Nidoran as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} Nidoranfemale g:Female shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '12shinyMaleNidoran':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Nidoran'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Nidoran (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Nidoran as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} Nidoranmale g:Male shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '13shinyClefairy':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Clefairy'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny CLefairy (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Clefairy as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} clefairy shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '14shinyVulpix':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Vulpix'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Vulpix (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Vulpix as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} vulpix shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '15shinyJigglypuff':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Jigglypuff'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Jigglypuff (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Jigglypuff as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} jigglypuff shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '16shinyZubat':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Zubat'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Zubat (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Zubat as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} zubat shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '17shinyOddish':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Oddish'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Oddish (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Oddish as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} oddish shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '18shinyParas':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Paras'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Paras (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Paras as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} paras shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '19shinyVenonat':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Venonat'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Venonat (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Venonat as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} venonat shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '20shinyDiglett':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Diglett'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Diglett (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Diglett as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} diglett shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '21shinyMeowth':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Meowth'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Meowth (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Meowth as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} meowth shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '22shinyPsyduck':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Psyduck'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Psyduck (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Psyduck as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} psyduck shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '23shinyMankey':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Mankey'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Mankey (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Psyduck as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} psyduck shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '24shinyGrowlithe':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Growlithe'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Growlithe (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Growlithe as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} growlithe shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '25shinyPoliwag':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lShiny Poliwag'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lShiny Poliwag (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny Poliwag as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} poliwag shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  '26shinyAbra':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+#<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->#
+  'IDENTIFIER':
+    Material: DRAGON_EGG
+    Glow: true
+    Name: '&a&lNAMEOFPOKEMON'
+    GiveConfiguratedItem: false
+    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewLores:
+    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - ''
+    - '&7Chance: 8.33%'
+    Commands: 
+    - pokegive {player_name} NAMEOFPOKEMON shiny
+    Chance: 8.33
+    Amount: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    LinkedRewards: []
+    Damage: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
