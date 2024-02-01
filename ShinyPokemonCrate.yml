@@ -575,13 +575,13 @@ Prizes:
     Glow: true
     Name: '&a&lShiny Abra'
     GiveConfiguratedItem: false
-    PreviewName: '&a&lNAMEOFPOKEMON (x1)'
+    PreviewName: '&a&lShiny Abra (x1)'
     PreviewLores:
-    - '&7Gain the Shiny NAMEOFPOKEMON as a new companion'
+    - '&7Gain the Shiny Shiny Abra as a new companion'
     - ''
     - '&7Chance: 8.33%'
     Commands: 
-    - pokegive {player_name} NAMEOFPOKEMON shiny
+    - pokegive {player_name} abra shiny
     Chance: 8.33
     Amount: 1
     ItemFlags:
