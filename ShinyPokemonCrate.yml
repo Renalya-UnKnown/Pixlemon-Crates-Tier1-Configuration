@@ -573,7 +573,7 @@ Prizes:
   '26shinyAbra':
     Material: DRAGON_EGG
     Glow: true
-    Name: '&a&lNAMEOFPOKEMON'
+    Name: '&a&lShiny Abra'
     GiveConfiguratedItem: false
     PreviewName: '&a&lNAMEOFPOKEMON (x1)'
     PreviewLores:
